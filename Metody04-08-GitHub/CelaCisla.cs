@@ -8,27 +8,28 @@ namespace Metody04_08_GitHub
 {
     class CelaCisla
     {
-        public static int Mocnina(int a, int b)
+        public static double Mocnina(int a, int b)
         {
             int mocnina = 1;
             double vysledek = 0;
-            bool je = false;
             if (b < 0)
             {
-                je = true;
-            }
-            for (int i = 1; i <= Math.Abs(b); i++)
-            {
-                mocnina *= a;
-            }
-            if (je)
-            {
+                for (int i = 0; i < -b; ++i)
+                {
+                    mocnina *= a;
+                }
                 vysledek = 1 / (double)mocnina;
+                return vysledek;
             }
-
-
-
-            return mocnina;
+            else
+            {
+                for (int i = 0; i < b; ++i)
+                {
+                    mocnina *= a;
+                }
+                return mocnina;
+            }
         }
+    }
     }
 }
