@@ -19,7 +19,10 @@ namespace Metody04_08_GitHub
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            int a = int.Parse(textBox1.Text);
+            int b = int.Parse(textBox2.Text);
+            int mocnina = CelaCisla.Mocnina(a, b);
+            MessageBox.Show("Mocnina je: " + mocnina);
         }
 
         private void button2_Click(object sender, EventArgs e)
