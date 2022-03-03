@@ -66,5 +66,21 @@ namespace Metody04_08_GitHub
             }
             return prvocislo;
         }
+        public static int PocetDeliteluSud(int a)
+        {
+            int pocetSud = 0;
+            for (int i = 1; i <= a; ++i)
+            {
+                if (a % i == 0)
+                {
+                    if (i % 2 == 0)
+                    {
+                        pocetSud++;
+                    }
+                }
+            }
+            return pocetSud;
+
+        }
     }
 }

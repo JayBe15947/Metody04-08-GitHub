@@ -50,7 +50,9 @@ namespace Metody04_08_GitHub
 
         private void button5_Click(object sender, EventArgs e)
         {
-
+            int a = int.Parse(textBox6.Text);
+            int pocetSudychDelitelu = CelaCisla.PocetDeliteluSud(a);
+            MessageBox.Show("Počet sudých dělitelů je: " + pocetSudychDelitelu);
         }
     }
 }
