@@ -35,7 +35,9 @@ namespace Metody04_08_GitHub
 
         private void button3_Click(object sender, EventArgs e)
         {
-
+            int a = int.Parse(textBox4.Text);
+            int soucetLichCifer = CelaCisla.CifLichSoucet(a);
+            MessageBox.Show("Soucet lichych cifer je: " + soucetLichCifer);
         }
 
         private void button4_Click(object sender, EventArgs e)
