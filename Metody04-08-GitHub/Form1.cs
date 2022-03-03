@@ -21,13 +21,16 @@ namespace Metody04_08_GitHub
         {
             int a = int.Parse(textBox1.Text);
             int b = int.Parse(textBox2.Text);
-            int mocnina = CelaCisla.Mocnina(a, b);
+            double mocnina = CelaCisla.Mocnina(a, b);
             MessageBox.Show("Mocnina je: " + mocnina);
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-
+            int a = int.Parse(textBox3.Text);
+            int faktorial = CelaCisla.Faktorial(a);
+            if (a < 0) throw new ArgumentException("Faktoriál nelze počítat ze záporného čísla");
+            else MessageBox.Show("Faktorial je: " + faktorial);
         }
 
         private void button3_Click(object sender, EventArgs e)

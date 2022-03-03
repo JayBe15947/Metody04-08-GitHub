@@ -30,6 +30,15 @@ namespace Metody04_08_GitHub
                 return mocnina;
             }
         }
-    }
+        public static int Faktorial(int a)
+        {
+            int faktorial = 1;
+            for (int i = 1; i <= a; i++)
+            {
+                faktorial *= i;
+            }
+            return faktorial;
+        }
+
     }
 }
