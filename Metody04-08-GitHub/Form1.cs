@@ -42,7 +42,10 @@ namespace Metody04_08_GitHub
 
         private void button4_Click(object sender, EventArgs e)
         {
-
+            int a = int.Parse(textBox5.Text);
+            bool prvocislo = CelaCisla.JePrvocislo(a);
+            if (prvocislo) MessageBox.Show("Cislo je prvocislo");
+            else MessageBox.Show("Cislo neni prvocislo");
         }
 
         private void button5_Click(object sender, EventArgs e)

@@ -56,5 +56,15 @@ namespace Metody04_08_GitHub
             }
             return cifSoucet;
         }
+        public static bool JePrvocislo(int a)
+        {
+            bool prvocislo = a != 1;
+            for (int i = 2; i <= Math.Sqrt(a) && prvocislo; ++i)
+            {
+                if (a % i == 0) prvocislo = false;
+
+            }
+            return prvocislo;
+        }
     }
 }
